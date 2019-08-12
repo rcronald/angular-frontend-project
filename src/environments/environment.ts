@@ -13,5 +13,5 @@ export const environment = {
     messagingSenderId: "268733450558",
     appId: "1:268733450558:web:492070724f014014"
   },
-  apiUrl: 'http://3.95.24.123:9090/api/v1'
+  apiUrl: 'https://retopromart.ngrok.io/api/v1'
 };
