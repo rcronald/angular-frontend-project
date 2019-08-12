@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyAI6GU1vdqDe_aNHcOxKjIbYcdDPDowqCI",
-    authDomain: "angular-frontend-project.firebaseapp.com",
-    databaseURL: "https://angular-frontend-project.firebaseio.com",
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
     projectId: "angular-frontend-project",
     storageBucket: "",
-    messagingSenderId: "268733450558",
-    appId: "1:268733450558:web:492070724f014014"
+    messagingSenderId: "",
+    appId: ""
   },
   apiUrl: 'https://retopromart.ngrok.io/api/v1'
 };
