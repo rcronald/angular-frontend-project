@@ -1,0 +1,37 @@
+<!-- Default form register -->
+<form *ngIf="!submitted" #f="ngForm" (ngSubmit)="onSubmit(f)" class="form-element text-center border border-light p-5">
+
+  <p class="h4 mb-4">Creación de Clientes</p>
+
+  <div class="form-row mb-4">
+    <div class="col">
+      <!-- First name -->
+      <input [(ngModel)]="customer.name" type="text" id="name" name="name" class="form-control" placeholder="Nombres" required>
+    </div>
+    <div class="col">
+      <!-- Last name -->
+      <input [(ngModel)]="customer.lastName" type="text" id="lastName" name="lastName" class="form-control" placeholder="Apellidos" required>
+    </div>
+  </div>
+
+  <div class="form-row mb-4">
+    <div class="col">
+      <!-- Age -->
+      <input [(ngModel)]="customer.age" type="text" id="age" name="age" class="form-control" placeholder="Edad" required>
+    </div>
+    <div class="col">
+      <!-- Date of Birth -->
+      <input [(ngModel)]="customer.dateOfBirth" type="date" id="dateOfBirth" name="dateOfBirth" class="form-control" placeholder="Fecha Nacimiento" min="1960-01-01" max="2010-01-01" required>
+    </div>
+  </div>
+
+
+  <!-- Register button -->
+  <input type="submit" class="btn btn-secondary btn-lg" value="Registrar" [disabled]="!f.form.valid" />
+</form>
+<!-- Default form register -->
+
+<div *ngIf="submitted" class="alert alert-success" role="alert">
+  Cliente registrado satisfactoriamente!!! 
+  <a routerLink="/customer-list">Ver lista de clientes</a>
+</div>

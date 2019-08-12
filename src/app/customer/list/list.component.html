@@ -1,0 +1,20 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombres</th>
+      <th scope="col">Apellidos</th>
+      <th scope="col">Edad</th>
+      <th scope="col">Fecha Nacimiento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let customer of customerList" (click)="onSelect(customer)">
+      <th scope="row">{{customer.id}}</th>
+      <td>{{customer.name}}</td>
+      <td>{{customer.lastName}}</td>
+      <td>{{customer.age}}</td>
+      <td>{{customer.dateOfBirth}}</td>
+    </tr>
+  </tbody>
+</table>
